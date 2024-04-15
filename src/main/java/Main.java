@@ -8,6 +8,8 @@ public class Main {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("my-persistence-unit");
         EntityManager em = emf.createEntityManager();
+
+        new MatheroWindow();
         //TEST AND PROVE THAT AUTHENTICATION WORKS
         //TO DELETE LATTER
         UserService userService = new UserService(em);
