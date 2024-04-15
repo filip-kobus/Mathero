@@ -5,20 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Zesp1-Matematyka.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Auth/PasswordEncrypter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Auth/User/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Auth/User/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Auth/User/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/04525361-6e6a-4f09-b157-b4e899ee60eb.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/04525361-6e6a-4f09-b157-b4e899ee60eb/storage_v2/_src_/database/USERDB.TRACE.DB.rORRdw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/04525361-6e6a-4f09-b157-b4e899ee60eb/storage_v2/_src_/database/USERDB.TRACE.DB.rORRdw/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e0e347c-9bfb-4d66-bd46-2335f230a025.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e0e347c-9bfb-4d66-bd46-2335f230a025/storage_v2/_src_/database/USERDB.iSW-lQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e0e347c-9bfb-4d66-bd46-2335f230a025/storage_v2/_src_/database/USERDB.iSW-lQ/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5fc1cf6d-ee34-479f-ac5f-cb5b91ac30ea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5fc1cf6d-ee34-479f-ac5f-cb5b91ac30ea/storage_v2/_src_/database/DATABASEFILE.d7nMbg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5fc1cf6d-ee34-479f-ac5f-cb5b91ac30ea/storage_v2/_src_/database/DATABASEFILE.d7nMbg/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/acbb4523-c732-44d3-9003-78028bea80d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/acbb4523-c732-44d3-9003-78028bea80d6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7f1cd77-2806-4eb8-8c8f-521efe250b1e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7f1cd77-2806-4eb8-8c8f-521efe250b1e/storage_v2/_src_/database/USERDB.iSW-lQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7f1cd77-2806-4eb8-8c8f-521efe250b1e/storage_v2/_src_/database/USERDB.iSW-lQ/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHeroApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MatHeroApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataBase/H2DataBase.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataBase/H2DataBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Auth/User/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auth/User/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +66,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.App.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature/basic-auth",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "jbr-17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/IdeaProject/Zesp1-Matematyka/DataBaseFile/UserDb.mv.db",
@@ -68,7 +76,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "advanced.settings",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.language",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -132,6 +143,7 @@
       <workItem from="1713125236227" duration="13950000" />
       <workItem from="1713139286363" duration="851000" />
       <workItem from="1713180350101" duration="12901000" />
+      <workItem from="1713199045166" duration="197000" />
     </task>
     <servers />
   </component>

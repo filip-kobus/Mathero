@@ -3,7 +3,6 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import Auth.User.User;
-import Auth.User.UserRepository;
 
 public class Main {
     public static void main(String[] args) {
