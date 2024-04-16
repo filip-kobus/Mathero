@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class generator {
-    public void generuj_zadanie(){
+    public void Generuj_zadanie(){
         Random random = new Random();
         
         int dzialanie=random.nextInt(4);
