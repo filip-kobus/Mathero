@@ -1,9 +1,9 @@
 public class PasswordValidator {
 
-    private int minCapital = 1;
-    private int minNumber = 2;
-    private int minSpecial = 2;
-    private int minLength = 8;
+    private int minCapital;
+    private int minNumber;
+    private int minSpecial;
+    private int minLength;
 
     /*
     tworzy validator z domyslnymi parametrami
