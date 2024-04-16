@@ -17,5 +17,8 @@ public class Main {
         userService.saveUser(user);
         User user1 = userService.getUserByLogin("user56", "password");
         System.out.println(user1.getLogin() + " " + user1.getEmail() + " " + user1.getPassword() + " " + user1.getSpentTime());
+
+        Generator generator=new Generator();
+        generator.generuj_zadanie();
     }
 }
