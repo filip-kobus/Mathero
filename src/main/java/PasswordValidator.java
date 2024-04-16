@@ -56,9 +56,8 @@ public class PasswordValidator {
         if(specialC<minSpecial)
             output += "Hasło musi zawierać conajmniej " + minSpecial +" znaki specjalne\n";
 
-        if(numberC<minCapital)
+        if(capitalC<minCapital)
             output += "Hasło musi zawierać conajmniej " + minCapital +" wielkie litery\n";
-
 
         if(output.length() == 0)
             output += "Password valid";
