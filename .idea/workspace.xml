@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Auth/User/UserRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2024_10_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2024_10_09__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Auth/User/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Auth/User/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +42,7 @@
     "Application.Main (1).executor": "Run",
     "JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor": "Run",
     "JUnit.UserRepositoryTest.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
@@ -69,7 +65,7 @@
       <recent name="E:\PwProjects\PIO\MatHeroApp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryTest">
+  <component name="RunManager" selected="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MatHeroApp" />
@@ -115,6 +111,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Auth.User.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Auth.User" />
+      <option name="MAIN_CLASS_NAME" value="Auth.User.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Zesp1-Matematyka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="Main" />
@@ -125,15 +136,17 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="JUnit.UserTest" />
       <item itemvalue="JUnit.UserRepositoryTest" />
       <item itemvalue="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification" />
+        <item itemvalue="JUnit.UserTest" />
         <item itemvalue="JUnit.UserRepositoryTest" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification" />
         <item itemvalue="Spring Boot.Main" />
       </list>
     </recent_temporary>
