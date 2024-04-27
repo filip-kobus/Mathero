@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Auth/PasswordEncrypterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/acbb4523-c732-44d3-9003-78028bea80d6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Auth/User/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2024_10_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2024_10_09__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBaseFile.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBaseFile.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +46,7 @@
   "keyToString": {
     "Application.Main (1).executor": "Run",
     "JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor": "Run",
+    "JUnit.UserRepositoryTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
@@ -71,7 +69,7 @@
       <recent name="E:\PwProjects\PIO\MatHeroApp" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MatHeroApp" />
@@ -102,6 +100,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Auth.User.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Auth.User" />
+      <option name="MAIN_CLASS_NAME" value="Auth.User.UserRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Zesp1-Matematyka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="Main" />
@@ -112,11 +125,13 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="JUnit.UserRepositoryTest" />
       <item itemvalue="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepositoryTest" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification" />
         <item itemvalue="Spring Boot.Main" />
@@ -199,6 +214,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Repository Init" />
     <option name="LAST_COMMIT_MESSAGE" value="Repository Init" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Auth/User/UserRepositoryTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
