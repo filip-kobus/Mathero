@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gallery/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MatheroWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/acbb4523-c732-44d3-9003-78028bea80d6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/acbb4523-c732-44d3-9003-78028bea80d6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Auth/User/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Auth/User/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="init/confirmation1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -39,45 +40,32 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main (1).executor": "Run",
-    "Application.Main.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor": "Run",
+    "JUnit.UserRepositoryTest.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.App.executor": "Run",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "git-widget-placeholder": "Merging feature/basic-auth",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "jbr-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/IdeaProject/Zesp1-Matematyka/DataBaseFile/UserDb.mv.db",
+    "last_opened_file_path": "C:/Users/stszy/.ssh/id_rsa.pub",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.language",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "ssh.settings",
+    "settings.editor.splitter.proportion": "0.23583333",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
-    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\filip\IdeaProjects\Zesp1-Matematyka\gallery" />
+      <recent name="E:\PwProjects\PIO\MatHeroApp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MatHeroApp" />
@@ -92,6 +80,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PasswordEncrypterTest.testPasswordEncryptionAndVerification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Auth" />
+      <option name="MAIN_CLASS_NAME" value="Auth.PasswordEncrypterTest" />
+      <option name="METHOD_NAME" value="testPasswordEncryptionAndVerification" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Auth.User.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Auth.User" />
+      <option name="MAIN_CLASS_NAME" value="Auth.User.UserRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Auth.User.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Auth.User" />
+      <option name="MAIN_CLASS_NAME" value="Auth.User.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Zesp1-Matematyka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="Main" />
@@ -102,10 +136,16 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="JUnit.UserTest" />
+      <item itemvalue="JUnit.UserRepositoryTest" />
+      <item itemvalue="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification" />
       <item itemvalue="Spring Boot.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification" />
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserRepositoryTest" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Spring Boot.Main" />
       </list>
@@ -120,6 +160,18 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="SSH_CONFIG" />
+    <option name="myConnectionId" value="Szymon Stasiak@ssh.dev.azure.com:22 key" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\stszy\AppData\Roaming\Subversion</configuration>
+    <option name="sshConnectionType" value="PRIVATE_KEY" />
+    <option name="sshExecutablePath" value="ssh" />
+    <option name="sshUserName" value="Szymon Stasiak" />
+    <option name="sshPrivateKeyPath" value="C:\Users\stszy\.ssh\id_rsa" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="" />
@@ -127,17 +179,65 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711664903389</updated>
-      <workItem from="1711664904825" duration="7000" />
-      <workItem from="1713102975281" duration="2498000" />
-      <workItem from="1713125236227" duration="13950000" />
-      <workItem from="1713139286363" duration="851000" />
-      <workItem from="1713180350101" duration="12901000" />
-      <workItem from="1713199045166" duration="197000" />
+      <workItem from="1711664904825" duration="5892000" />
+      <workItem from="1711671123303" duration="1011000" />
+      <workItem from="1711700923855" duration="1223000" />
+      <workItem from="1711733257356" duration="845000" />
+      <workItem from="1713377149481" duration="581000" />
+      <workItem from="1714205043807" duration="162000" />
+      <workItem from="1714205256787" duration="2027000" />
     </task>
+    <task id="LOCAL-00001" summary="Repository Init">
+      <option name="closed" value="true" />
+      <created>1711664958295</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711664958295</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Repository Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repository Init" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Auth/User/UserRepositoryTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
