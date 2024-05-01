@@ -1,3 +1,5 @@
+package PassVal;
+
 public class PasswordValidator {
 
     private int minCapital;
