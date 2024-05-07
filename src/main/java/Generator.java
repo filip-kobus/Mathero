@@ -2,14 +2,15 @@ import java.util.Random;
 
 public class Generator {
 
-    int liczba1=0,liczba2=0;
-    int X=0, R=0;
-    int dzialanie;
-
-    public void generuj_zadanie(){
+    public int liczba1=0,liczba2=0;
+    public int X=0, R=0;
+    public int ganaruj_dzialanie(){
         Random random = new Random();
-        
-        dzialanie=random.nextInt(4);
+        return random.nextInt(4);
+    }
+
+    public void generuj_zadanie(int dzialanie){
+        Random random = new Random();
         /*
         0 - dodawanie
         1 - odejmowanie
