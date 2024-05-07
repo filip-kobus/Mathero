@@ -1,19 +1,21 @@
 import java.util.Random;
 
 public class Generator {
+
+    int liczba1=0,liczba2=0;
+    int X=0, R=0;
+    int dzialanie;
+
     public void generuj_zadanie(){
         Random random = new Random();
         
-        int dzialanie=random.nextInt(4);
+        dzialanie=random.nextInt(4);
         /*
         0 - dodawanie
         1 - odejmowanie
         2 - mnozenie
         3 - dzielenie
         */
-        int liczba1=0,liczba2=0;
-        
-        int X=0,R=0;
         
         switch (dzialanie){
             case 0:
