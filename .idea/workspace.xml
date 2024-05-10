@@ -7,6 +7,12 @@
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2024_10_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2024_10_09__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GeneratorZadan/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GeneratorZadan/GeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MatheroWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatheroWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Generator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +45,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Generator.executor": "Run",
     "Application.Main (1).executor": "Run",
+    "Application.MatheroWindow.executor": "Run",
+    "JUnit.GeneratorTest.executor": "Run",
     "JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor": "Run",
     "JUnit.PasswordValidatorTest2.executor": "Run",
     "JUnit.UserRepositoryTest.executor": "Run",
@@ -48,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "kobusPwdWalidatorTest",
+    "git-widget-placeholder": "resolving__problems",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/stszy/.ssh/id_rsa.pub",
     "node.js.detected.package.eslint": "true",
@@ -69,7 +78,20 @@
       <recent name="E:\PwProjects\PIO\MatHeroApp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordValidatorTest2">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GeneratorZadan.Generator" />
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GeneratorZadan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MatHeroApp" />
@@ -84,82 +106,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordEncrypterTest.testPasswordEncryptionAndVerification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatheroWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MatheroWindow" />
+      <module name="MatHeroApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MatHeroApp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Auth.*" />
+          <option name="PATTERN" value="GeneratorZadan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Auth" />
-      <option name="MAIN_CLASS_NAME" value="Auth.PasswordEncrypterTest" />
-      <option name="METHOD_NAME" value="testPasswordEncryptionAndVerification" />
+      <option name="PACKAGE_NAME" value="GeneratorZadan" />
+      <option name="MAIN_CLASS_NAME" value="GeneratorZadan.GeneratorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorTest.testDzielenie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GeneratorZadan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GeneratorZadan" />
+      <option name="MAIN_CLASS_NAME" value="GeneratorZadan.GeneratorTest" />
+      <option name="METHOD_NAME" value="testDzielenie" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PasswordValidatorTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MatHeroApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PassVal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="PassVal" />
-      <option name="MAIN_CLASS_NAME" value="PassVal.PasswordValidatorTest2" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MatHeroApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Auth.User.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Auth.User" />
-      <option name="MAIN_CLASS_NAME" value="Auth.User.UserRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MatHeroApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Auth.User.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Auth.User" />
-      <option name="MAIN_CLASS_NAME" value="Auth.User.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Generator" />
+      <item itemvalue="Application.MatheroWindow" />
       <item itemvalue="Application.Main (1)" />
-      <item itemvalue="JUnit.PasswordValidatorTest2" />
-      <item itemvalue="JUnit.UserTest" />
-      <item itemvalue="JUnit.UserRepositoryTest" />
-      <item itemvalue="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification" />
+      <item itemvalue="JUnit.GeneratorTest" />
+      <item itemvalue="JUnit.GeneratorTest.testDzielenie" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PasswordValidatorTest2" />
-        <item itemvalue="JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification" />
-        <item itemvalue="JUnit.UserTest" />
-        <item itemvalue="JUnit.UserRepositoryTest" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="JUnit.GeneratorTest.testDzielenie" />
+        <item itemvalue="JUnit.GeneratorTest" />
+        <item itemvalue="Application.Generator" />
+        <item itemvalue="Application.MatheroWindow" />
       </list>
     </recent_temporary>
   </component>
