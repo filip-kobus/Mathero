@@ -1,4 +1,5 @@
 import Auth.User.UserService;
+import GeneratorZadan.Generator;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;

@@ -1,3 +1,5 @@
+package GeneratorZadan;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -19,16 +21,20 @@ public class GeneratorTest {
 
     @Test
     public void testMnozenie() {
-        Generator generator = new Generator(2);
-        generator.generuj_zadanie();
+        Generator generator = new Generator();
+        generator.generuj_zadanie(2);
         assertEquals(generator.X, (generator.liczba1 * generator.liczba2));
     }
 
     @Test
     public void testDzielenie() {
-        Generator generator = new Generator(3);
-        generator.generuj_zadanie();
-        if (generator.dzialanie == 3) {
+        Generator generator = new Generator();
+        generator.generuj_zadanie(3);
+        if(generator.liczba1 > generator.liczba2) {
+            assertEquals(generator.X, (generator.liczba1 / generator.liczba2));
+            assertEquals(generator.R, (generator.liczba1 % generator.liczba2));
+        }
+        else {
             assertEquals(generator.X, (generator.liczba2 / generator.liczba1));
             assertEquals(generator.R, (generator.liczba2 % generator.liczba1));
         }

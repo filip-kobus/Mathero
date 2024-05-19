@@ -77,8 +77,6 @@ public class MatheroWindow extends JFrame {
 
         JTextField answerField = new JTextField();
         answerField.setPreferredSize(new Dimension(50, 60));
-        //answerField.setMinimumSize(answerField.getPreferredSize());
-        //answerField.setMaximumSize(answerField.getPreferredSize());
         answerField.setBackground(new Color(52, 24, 73));
         answerField.setForeground(Color.WHITE);
         answerField.setFont(new Font("Arial", Font.PLAIN, 60));
@@ -103,6 +101,10 @@ public class MatheroWindow extends JFrame {
         lowerSection.add(previousExerciseBtn);
         lowerSection.add(checkAnswerBtn);
         lowerSection.add(nextExerciseBtn);
+    }
+
+    public static void main(String[] args) {
+        new MatheroWindow();
     }
 
 }
