@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class MatheroWindow extends JFrame {
+public class MatHeroApp extends JFrame {
 
     private JPanel MainPanel = new JPanel();
     private JPanel MidPanel = new JPanel();
@@ -13,9 +13,9 @@ public class MatheroWindow extends JFrame {
 
     private GridBagConstraints gbc = new GridBagConstraints();
 
-    public MatheroWindow() {
+    public MatHeroApp() {
         addSection();
-        setZadanie();
+        AuthDisplay.displayAuthentication(upperSection, lowerSection);
         setBackground();
     }
 
@@ -28,7 +28,6 @@ public class MatheroWindow extends JFrame {
         RightPanel.setPreferredSize(new Dimension(260, MainPanel.getHeight()));
         RightPanel.setBackground(new Color(186, 186, 186));
 
-        // Dodawanie LeftPanel, MidPanel i RightPanel do MainPanel
         MainPanel.add(LeftPanel, BorderLayout.WEST);
         MainPanel.add(MidPanel, BorderLayout.CENTER);
         MainPanel.add(RightPanel, BorderLayout.EAST);
@@ -38,7 +37,6 @@ public class MatheroWindow extends JFrame {
         this.setTitle("Mathero");
         this.setSize(1180, 740);
         this.setVisible(true);
-        this.setResizable(false);
     }
 
     private void addSection() {
@@ -66,45 +64,10 @@ public class MatheroWindow extends JFrame {
         MidPanel.add(lowerSection, gbc);
     }
 
-    private void setZadanie() {
-        JLabel firstTextField = new JLabel("2 + ");
-        firstTextField.setForeground(Color.WHITE);
-        firstTextField.setFont(new Font("Segoe UI Black", Font.BOLD, 60));
 
-        JLabel secondTextField = new JLabel(" = 5");
-        secondTextField.setForeground(Color.WHITE);
-        secondTextField.setFont(new Font("Segoe UI Black", Font.BOLD, 60));
-
-        JTextField answerField = new JTextField();
-        answerField.setPreferredSize(new Dimension(50, 60));
-        answerField.setBackground(new Color(52, 24, 73));
-        answerField.setForeground(Color.WHITE);
-        answerField.setFont(new Font("Arial", Font.PLAIN, 60));
-        answerField.setCaretPosition(0);
-
-        JButton previousExerciseBtn = new JButton("<<");
-        previousExerciseBtn.setFont(new Font("Arial", Font.PLAIN, 24));
-        previousExerciseBtn.setPreferredSize(new Dimension(190, 150));
-
-        JButton checkAnswerBtn = new JButton("Check");
-        checkAnswerBtn.setFont(new Font("Arial", Font.PLAIN, 24));
-        checkAnswerBtn.setPreferredSize(new Dimension(190, 150));
-
-        JButton nextExerciseBtn = new JButton(">>");
-        nextExerciseBtn.setFont(new Font("Arial", Font.PLAIN, 24));
-        nextExerciseBtn.setPreferredSize(new Dimension(190, 150));
-
-        upperSection.add(firstTextField);
-        upperSection.add(answerField);
-        upperSection.add(secondTextField);
-
-        lowerSection.add(previousExerciseBtn);
-        lowerSection.add(checkAnswerBtn);
-        lowerSection.add(nextExerciseBtn);
-    }
 
     public static void main(String[] args) {
-        new MatheroWindow();
+        new MatHeroApp();
     }
 
 }
