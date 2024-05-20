@@ -3,29 +3,32 @@ package Auth.User;
 
 import Auth.PasswordEncrypter;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 
 public class UserService {
 
-    private final EntityManager entityManager;
+    private final EntityManagerFactory entityManagerFactory =
+            Persistence.createEntityManagerFactory("unit");
 
-    private final UserRepository userRepository;
-
-    public UserService(EntityManager entityManager) {
-        this.entityManager = entityManager;
-        userRepository = new UserRepository(entityManager);
-    }
+    private final EntityManager entityManager = entityManagerFactory.createEntityManager();
 
 
-    public void saveUser(User user) {
+    private final UserRepository userRepository = new UserRepository(entityManager);
+
+
+    public boolean saveUser(User user) {
         try {
             entityManager.getTransaction().begin();
             if (userRepository.isUserWithLoginPresent(user.getLogin())) {
                 System.out.println("User with login " + user.getLogin() + " already exists.");
+                return false;
             } else if (userRepository.isUserWithEmailPresent(user.getEmail())) {
                 System.out.println("User with email " + user.getEmail() + " already exists.");
+                return false;
             } else {
                 userRepository.saveUser(user);
-                System.out.println("User saved");
+                System.out.println("User with login " + user.getLogin() + " saved.");
             }
             entityManager.getTransaction().commit();
         } catch (Exception e) {
@@ -34,11 +37,12 @@ public class UserService {
             }
         }
 
+        return true;
 
     }
 
 
-    public User getUserByLogin(String login, String password){
+    public User getUserByLogin(String login, String password) {
         User temp = null;
         try {
             entityManager.getTransaction().begin();
@@ -53,7 +57,7 @@ public class UserService {
             System.out.println("User with login " + login + " not found.");
             return temp;
         }
-        if(new PasswordEncrypter().verifyPassword(password, temp.getPassword())) {
+        if (new PasswordEncrypter().verifyPassword(password, temp.getPassword())) {
             System.out.println("User with login " + login + " found and loaded.");
         } else {
             System.out.println("Wrong password");
