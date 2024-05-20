@@ -5,15 +5,16 @@ import java.util.Random;
 
 public class Generator {
 
-    public int liczba1=0,liczba2=0;
-    public int X=0;
+    private static int liczba1=0;
+    private static  int liczba2=0;
+    private static int X=0;
 
-    public int generuj_dzialanie(){
+    public static int generuj_dzialanie(){
         Random random = new Random();
         return random.nextInt(4);
     }
 
-    private void generujLiczby(int granica) {
+    private static void generujLiczby(int granica) {
         Random random = new Random();
         int[] liczby = {random.nextInt(granica-1)+1, random.nextInt(granica-1)+1};
         if(liczby[0] > liczby[1]) {
@@ -27,7 +28,7 @@ public class Generator {
         }
     }
 
-    public ArrayList<String> generuj_zadanie(int dzialanie) {
+    public static ArrayList<String> generuj_zadanie(int dzialanie) {
         ArrayList<String> trescZadania = new ArrayList<>();
         /*
         0 - dodawanie
@@ -43,18 +44,18 @@ public class Generator {
                 generujLiczby(100);
                 X = liczba1 - liczba2;
                 trescZadania.add(Integer.toString(liczba2));
-                trescZadania.add("+");
+                trescZadania.add(" + ");
                 trescZadania.add(Integer.toString(X));
-                trescZadania.add("=");
+                trescZadania.add(" = ");
                 trescZadania.add(Integer.toString(liczba1));
                 break;
             case 1:
                 generujLiczby(100);
                 X = liczba1 - liczba2;
                 trescZadania.add(Integer.toString(liczba1));
-                trescZadania.add("-");
+                trescZadania.add(" - ");
                 trescZadania.add(Integer.toString(X));
-                trescZadania.add("=");
+                trescZadania.add(" = ");
                 trescZadania.add(Integer.toString(liczba2));
                 break;
             case 2:
@@ -63,9 +64,9 @@ public class Generator {
                 X = liczba1 / liczba2;
                 liczba1 = liczba2 * X;
                 trescZadania.add(Integer.toString(liczba2));
-                trescZadania.add("*");
+                trescZadania.add(" * ");
                 trescZadania.add(Integer.toString(X));
-                trescZadania.add("=");
+                trescZadania.add(" = ");
                 trescZadania.add(Integer.toString(liczba1));
                 break;
             case 3:
@@ -74,9 +75,9 @@ public class Generator {
                 X = liczba1 / liczba2;
                 liczba1 = liczba2 * X;
                 trescZadania.add(Integer.toString(liczba1));
-                trescZadania.add(":");
+                trescZadania.add(" : ");
                 trescZadania.add(Integer.toString(X));
-                trescZadania.add("=");
+                trescZadania.add(" = ");
                 trescZadania.add(Integer.toString(liczba2));
                 break;
         }
