@@ -1,17 +1,17 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class TaskDisplay extends JFrame {
+public class TaskDisplay {
 
+    public static void setTaskContent(JPanel taskPanel) {
 
-    public static void setZadanie(JPanel upperSection, JPanel lowerSection) {
-        JLabel firstTextField = new JLabel("2 + ");
-        firstTextField.setForeground(Color.WHITE);
-        firstTextField.setFont(new Font("Segoe UI Black", Font.BOLD, 60));
+        JLabel equationLabel = new JLabel("2 + ");
+        equationLabel.setForeground(Color.WHITE);
+        equationLabel.setFont(new Font("Segoe UI Black", Font.BOLD, 60));
 
-        JLabel secondTextField = new JLabel(" = 5");
-        secondTextField.setForeground(Color.WHITE);
-        secondTextField.setFont(new Font("Segoe UI Black", Font.BOLD, 60));
+        JLabel resultLabel = new JLabel(" = 5");
+        resultLabel.setForeground(Color.WHITE);
+        resultLabel.setFont(new Font("Segoe UI Black", Font.BOLD, 60));
 
         JTextField answerField = new JTextField();
         answerField.setPreferredSize(new Dimension(50, 60));
@@ -32,34 +32,35 @@ public class TaskDisplay extends JFrame {
         nextExerciseBtn.setFont(new Font("Arial", Font.PLAIN, 24));
         nextExerciseBtn.setPreferredSize(new Dimension(190, 150));
 
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.weightx = 1.0;
-        gbc.weighty = 1.0;
+        taskPanel.setLayout(new BorderLayout());
+        taskPanel.setBackground(new Color(52, 24, 73));
 
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 1;
-        gbc.gridheight = 1;
-        gbc.anchor = GridBagConstraints.CENTER;
-        upperSection.add(firstTextField, gbc);
+        int windowHeight = taskPanel.getSize().height;
+        int transparentPanelHeight = windowHeight / 2 - 100;
 
-        gbc.gridx = 1;
-        upperSection.add(answerField, gbc);
+        JPanel transparentPanel = new JPanel();
+        transparentPanel.setOpaque(false);
+        transparentPanel.setPreferredSize(new Dimension(10, transparentPanelHeight));
 
-        gbc.gridx = 2;
-        upperSection.add(secondTextField, gbc);
+        taskPanel.add(transparentPanel, BorderLayout.NORTH);
 
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.anchor = GridBagConstraints.CENTER;
-        lowerSection.add(previousExerciseBtn, gbc);
+        JPanel labelPanel = new JPanel();
+        labelPanel.setOpaque(false);
+        labelPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+        labelPanel.add(equationLabel);
+        labelPanel.add(answerField);
+        labelPanel.add(resultLabel);
+        taskPanel.add(labelPanel, BorderLayout.CENTER);
 
-        gbc.gridx = 1;
-        lowerSection.add(checkAnswerBtn, gbc);
+        JPanel buttonPanel = new JPanel(new GridLayout(1, 3, 10, 0));
+        buttonPanel.setOpaque(false);
+        buttonPanel.add(previousExerciseBtn);
+        buttonPanel.add(checkAnswerBtn);
+        buttonPanel.add(nextExerciseBtn);
+        taskPanel.add(buttonPanel, BorderLayout.SOUTH);
 
-        gbc.gridx = 2;
-        lowerSection.add(nextExerciseBtn, gbc);
+
+        taskPanel.revalidate();
+        taskPanel.repaint();
     }
-
 }

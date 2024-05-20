@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AuthDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MatHeroApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2024_10_09_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_04_2024_10_09__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ControlPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MatheroWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MatheroWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PasswordValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBaseFile/UserDb.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Auth/User/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Auth/User/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AuthDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AuthDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MatHeroApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Auth/User/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auth/User/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AuthDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AuthDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ControlPanel.executor": "Run",
     "Application.Generator.executor": "Run",
     "Application.Main (1).executor": "Run",
     "Application.MatHeroApp.executor": "Run",
@@ -88,7 +90,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MatHeroApp">
+  <component name="RunManager" selected="Application.MatheroApp">
+    <configuration name="ControlPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ControlPanel" />
+      <module name="MatHeroApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MatHeroApp" />
@@ -124,37 +133,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GeneratorTest.testDzielenie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MatHeroApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GeneratorZadan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GeneratorZadan" />
-      <option name="MAIN_CLASS_NAME" value="GeneratorZadan.GeneratorTest" />
-      <option name="METHOD_NAME" value="testDzielenie" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ControlPanel" />
       <item itemvalue="Application.MatHeroApp" />
       <item itemvalue="Application.MathHeroApp" />
       <item itemvalue="Application.MatheroApp" />
       <item itemvalue="Application.Main (1)" />
-      <item itemvalue="JUnit.GeneratorTest.testDzielenie" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MatheroApp" />
+        <item itemvalue="Application.ControlPanel" />
         <item itemvalue="Application.MatHeroApp" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.MathHeroApp" />
-        <item itemvalue="Application.MatheroApp" />
-        <item itemvalue="JUnit.GeneratorTest.testDzielenie" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +187,8 @@
       <workItem from="1714205043807" duration="162000" />
       <workItem from="1714205256787" duration="2027000" />
       <workItem from="1716148439190" duration="362000" />
-      <workItem from="1716148813913" duration="10902000" />
+      <workItem from="1716148813913" duration="11190000" />
+      <workItem from="1716212590027" duration="10876000" />
     </task>
     <task id="LOCAL-00001" summary="Repository Init">
       <option name="closed" value="true" />
@@ -236,17 +230,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Repository Init" />
     <option name="LAST_COMMIT_MESSAGE" value="Repository Init" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Auth/User/UserRepositoryTest.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
