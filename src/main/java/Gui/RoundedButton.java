@@ -7,12 +7,13 @@ import java.awt.event.MouseEvent;
 
 public class RoundedButton extends JButton {
 
-    private int cornerRadius = 30;
+    private int cornerRadius;
     private boolean mouseOver = false;
     private boolean mousePressed = false;
 
-    public RoundedButton(String text) {
+    public RoundedButton(String text, int radius) {
         super(text);
+        this.cornerRadius = radius;
         setContentAreaFilled(false);
         setFocusPainted(false);
         setBorderPainted(false);
@@ -55,6 +56,11 @@ public class RoundedButton extends JButton {
         this.setFont(new Font("Arial", Font.BOLD, 36));
     }
 
+    public void setFontSize(int fontSize) {
+        this.setFont(new Font("Arial", Font.BOLD, fontSize));
+    }
+
+
     @Override
     protected void paintComponent(Graphics g) {
         Graphics2D g2 = (Graphics2D) g.create();
@@ -79,7 +85,7 @@ public class RoundedButton extends JButton {
         Graphics2D g2 = (Graphics2D) g.create();
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2.setColor(Color.BLACK);
-        g2.setStroke(new BasicStroke(2));
+        g2.setStroke(new BasicStroke(0));
         g2.drawRoundRect(0, 0, getWidth() - 1, getHeight() - 1, cornerRadius, cornerRadius);
         g2.dispose();
     }

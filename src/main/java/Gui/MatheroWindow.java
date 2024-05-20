@@ -92,10 +92,10 @@ public class MatheroWindow extends JFrame {
     private void initExercisePage() {
         answerField = new NumberInputField(2);  // Initialize answerField
 
-        RoundedButton previousExerciseBtn = new RoundedButton("<<");
-        RoundedButton checkAnswerBtn = new RoundedButton("Check");
+        RoundedButton previousExerciseBtn = new RoundedButton("<<", 30);
+        RoundedButton checkAnswerBtn = new RoundedButton("Check", 30);
         checkAnswerBtn.styleCheckButton();
-        RoundedButton nextExerciseBtn = new RoundedButton(">>");
+        RoundedButton nextExerciseBtn = new RoundedButton(">>", 30);
 
         nextExerciseBtn.addActionListener(new ActionListener() {
             @Override

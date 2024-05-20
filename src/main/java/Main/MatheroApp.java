@@ -1,10 +1,14 @@
+package Main;
+
+import Gui.AuthDisplay;
+import Gui.TaskDisplay;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class MatheroApp {
     private static final CardLayout cardLayout = new CardLayout();
     private static final JPanel mainPanel = new JPanel(cardLayout);
-
 
     public static void displayContent(JPanel lowerSection) {
         mainPanel.setLayout(cardLayout);
@@ -29,6 +33,8 @@ public class MatheroApp {
         JFrame frame = new JFrame("MatHeroApp");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 600);
+        ImageIcon icon = new ImageIcon("gallery/icon.png");
+        frame.setIconImage(icon.getImage());
         frame.setContentPane(contentPane);
         frame.add(lowerSection, BorderLayout.SOUTH);
         frame.setVisible(true);
@@ -39,7 +45,6 @@ public class MatheroApp {
     public static void switchToTaskPanel() {
         TaskDisplay.setTaskContent(getTaskPanel());
         cardLayout.show(mainPanel, "task");
-
     }
 
     public static JPanel getTaskPanel() {
