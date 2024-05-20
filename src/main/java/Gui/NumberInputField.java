@@ -9,7 +9,7 @@ public class NumberInputField extends JTextField {
     public NumberInputField(int maxLength) {
         super();
         setDocument(createNumberDocument(maxLength));
-        setPreferredSize(new Dimension(75, 60));
+        setPreferredSize(new Dimension(maxLength*38, 60));
         setBackground(new Color(52, 24, 73));
         setForeground(Color.WHITE);
         setBorder(javax.swing.BorderFactory.createEmptyBorder());

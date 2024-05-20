@@ -1,42 +1,48 @@
 package GeneratorZadan;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class GeneratorTest {
 
+    private int X, l1, l2;
+
+    private void zapiszLiczby(int dzialanie, Generator generator) {
+        ArrayList<String> wynik = generator.generuj_zadanie(dzialanie);
+
+        l1 = Integer.parseInt(wynik.get(0));
+        X = Integer.parseInt(wynik.get(2));
+        l2 = Integer.parseInt(wynik.get(4));
+    }
+
     @Test
     public void testDodawanie() {
         Generator generator = new Generator();
-        generator.generuj_zadanie(0);
-        assertTrue(generator.X == (generator.liczba1 - generator.liczba2) || generator.X == (generator.liczba2 - generator.liczba1));
+        zapiszLiczby(0, generator);
+        assertEquals(X, l2 - l1);
     }
 
     @Test
     public void testOdejmowanie() {
         Generator generator = new Generator();
-        generator.generuj_zadanie(1);
-        assertTrue(generator.X == (generator.liczba2 - generator.liczba1) || generator.X == (generator.liczba1 - generator.liczba2));
+        zapiszLiczby(1, generator);
+        assertEquals(X, l1 - l2);
     }
 
     @Test
     public void testMnozenie() {
         Generator generator = new Generator();
-        generator.generuj_zadanie(2);
-        assertEquals(generator.X, (generator.liczba1 * generator.liczba2));
+        zapiszLiczby(2, generator);
+        assertEquals(l2, l1 * X);
     }
 
     @Test
     public void testDzielenie() {
         Generator generator = new Generator();
-        generator.generuj_zadanie(3);
-        if(generator.liczba1 > generator.liczba2) {
-            assertEquals(generator.X, (generator.liczba1 / generator.liczba2));
-            assertEquals(generator.R, (generator.liczba1 % generator.liczba2));
-        }
-        else {
-            assertEquals(generator.X, (generator.liczba2 / generator.liczba1));
-            assertEquals(generator.R, (generator.liczba2 % generator.liczba1));
-        }
+        zapiszLiczby(3, generator);
+        assertEquals(l2, l1 / X);
     }
 }

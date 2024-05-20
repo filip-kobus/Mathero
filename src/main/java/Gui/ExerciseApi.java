@@ -1,4 +1,7 @@
 package Gui;
 
-public class ExerciseApi {
+import GeneratorZadan.Generator;
+
+public class ExerciseApi extends Generator {
+
 }

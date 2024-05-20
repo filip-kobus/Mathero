@@ -17,6 +17,16 @@ public class MatheroWindow extends JFrame {
         addSection();
         setZadanie();
         setBackground();
+
+        setContentPane(MainPanel);
+
+        setTitle("Mathero");
+        ImageIcon icon = new ImageIcon("gallery/icon.png");
+        setIconImage(icon.getImage());
+        setSize(1180, 740);
+        setVisible(true);
+        setResizable(false);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     private void addSection() {
@@ -52,7 +62,7 @@ public class MatheroWindow extends JFrame {
         secondTextField.setForeground(Color.WHITE);
         secondTextField.setFont(new Font("Segoe UI Black", Font.BOLD, 60));
 
-        NumberInputField answerField = new NumberInputField(2);
+        NumberInputField answerField = new NumberInputField(3);
 
         RoundedButton previousExerciseBtn = new RoundedButton("<<");
         RoundedButton checkAnswerBtn = new RoundedButton("Check");
@@ -81,16 +91,6 @@ public class MatheroWindow extends JFrame {
         MainPanel.add(LeftPanel, BorderLayout.WEST);
         MainPanel.add(MidPanel, BorderLayout.CENTER);
         MainPanel.add(RightPanel, BorderLayout.EAST);
-
-        this.setContentPane(MainPanel);
-
-        this.setTitle("Mathero");
-        ImageIcon icon = new ImageIcon("gallery/icon.png");
-        this.setIconImage(icon.getImage());
-        this.setSize(1180, 740);
-        this.setVisible(true);
-        this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) {
