@@ -6,7 +6,7 @@ public class MatheroApp {
     private static final JPanel mainPanel = new JPanel(cardLayout);
 
 
-    public static void displayContent(JPanel upperSection, JPanel lowerSection) {
+    public static void displayContent( JPanel lowerSection) {
         mainPanel.setLayout(cardLayout);
 
 
@@ -52,9 +52,7 @@ public class MatheroApp {
     }
 
     public static void main(String[] args) {
-        JPanel upperSection = new JPanel(new BorderLayout());
         JPanel lowerSection = new JPanel(new FlowLayout());
-
-        displayContent(upperSection, lowerSection);
+        displayContent( lowerSection);
     }
 }
