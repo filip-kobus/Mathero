@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="mala poprawkaa">
+      <change beforePath="$PROJECT_DIR$/src/main/java/MatheroApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatheroApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +176,7 @@
       <workItem from="1714205256787" duration="2027000" />
       <workItem from="1716148439190" duration="362000" />
       <workItem from="1716148813913" duration="11190000" />
-      <workItem from="1716212590027" duration="11499000" />
+      <workItem from="1716212590027" duration="12019000" />
     </task>
     <task id="LOCAL-00001" summary="Repository Init">
       <option name="closed" value="true" />
@@ -186,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711664958295</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mala poprawkaa">
+      <option name="closed" value="true" />
+      <created>1716225923667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716225923667</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +225,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Repository Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repository Init" />
+    <MESSAGE value="mala poprawkaa" />
+    <option name="LAST_COMMIT_MESSAGE" value="mala poprawkaa" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

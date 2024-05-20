@@ -59,7 +59,6 @@ public class TaskDisplay {
         buttonPanel.add(nextExerciseBtn);
         taskPanel.add(buttonPanel, BorderLayout.SOUTH);
 
-
         taskPanel.revalidate();
         taskPanel.repaint();
     }

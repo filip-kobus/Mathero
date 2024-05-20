@@ -8,9 +8,16 @@ import java.awt.event.ActionListener;
 
 
 public class AuthDisplay {
-    private static CardLayout cardLayout = new CardLayout();
+    private  static CardLayout cardLayout = new CardLayout();
     private static JButton loginBtn;
     private static JButton signInBtn;
+
+    public static User user;
+
+    static User getUser() {
+        return user;
+    }
+
 
     public static void displayAuthentication(JPanel upperSection, JPanel lowerSection) {
         JPanel loginPanel = createLoginPanel(upperSection);
@@ -177,8 +184,11 @@ public class AuthDisplay {
     private static UserService userService = new UserService();
 
     private static void handleLogin(String username, String password, JPanel upperSection) {
-        User user = userService.getUserByLogin(username, password);
+       user = userService.getUserByLogin(username, password);
         if (user != null) {
+
+
+
             JOptionPane.showMessageDialog(null, "Login successful!");
             loginBtn.setVisible(false);
             signInBtn.setVisible(false);

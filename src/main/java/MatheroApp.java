@@ -6,18 +6,13 @@ public class MatheroApp {
     private static final JPanel mainPanel = new JPanel(cardLayout);
 
 
-    public static void displayContent( JPanel lowerSection) {
+    public static void displayContent(JPanel lowerSection) {
         mainPanel.setLayout(cardLayout);
-
-
         JPanel authPanel = new JPanel();
         JPanel taskPanel = new JPanel();
-
         mainPanel.add(authPanel, "auth");
         mainPanel.add(taskPanel, "task");
-
         AuthDisplay.displayAuthentication(authPanel, lowerSection);
-
 
         JPanel leftSidePanel = new JPanel();
         leftSidePanel.setBackground(new Color(220, 220, 220));
@@ -53,6 +48,6 @@ public class MatheroApp {
 
     public static void main(String[] args) {
         JPanel lowerSection = new JPanel(new FlowLayout());
-        displayContent( lowerSection);
+        displayContent(lowerSection);
     }
 }
