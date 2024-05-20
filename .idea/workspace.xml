@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ControlPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBaseFile/UserDb.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Auth/User/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Auth/User/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AuthDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AuthDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MatHeroApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TaskDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Auth/User/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Auth/User/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AuthDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AuthDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +176,7 @@
       <workItem from="1714205256787" duration="2027000" />
       <workItem from="1716148439190" duration="362000" />
       <workItem from="1716148813913" duration="11190000" />
-      <workItem from="1716212590027" duration="10876000" />
+      <workItem from="1716212590027" duration="11499000" />
     </task>
     <task id="LOCAL-00001" summary="Repository Init">
       <option name="closed" value="true" />
