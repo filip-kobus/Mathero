@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MatheroWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MatheroWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MatheroWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/MatheroWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/RoundedButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/RoundedButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MatheroWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/MatheroWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/RoundedButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/RoundedButton$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/RoundedButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/RoundedButton.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +46,7 @@
     "Application.Generator.executor": "Run",
     "Application.Main (1).executor": "Run",
     "Application.MatheroWindow.executor": "Run",
+    "Application.NumberInputField.executor": "Run",
     "JUnit.GeneratorTest.executor": "Run",
     "JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor": "Run",
     "JUnit.PasswordValidatorTest2.executor": "Run",
@@ -73,19 +78,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.MatheroWindow">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GeneratorZadan.Generator" />
-      <module name="MatHeroApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GeneratorZadan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MatHeroApp" />
@@ -103,6 +95,19 @@
     <configuration name="MatheroWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Gui.MatheroWindow" />
       <module name="MatHeroApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NumberInputField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Gui.NumberInputField" />
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,7 +145,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Generator" />
+      <item itemvalue="Application.NumberInputField" />
       <item itemvalue="Application.MatheroWindow" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="JUnit.GeneratorTest" />
@@ -149,10 +154,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MatheroWindow" />
+        <item itemvalue="Application.NumberInputField" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.GeneratorTest.testDzielenie" />
         <item itemvalue="JUnit.GeneratorTest" />
-        <item itemvalue="Application.Generator" />
       </list>
     </recent_temporary>
   </component>
