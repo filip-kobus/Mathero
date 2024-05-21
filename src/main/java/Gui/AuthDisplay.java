@@ -6,20 +6,14 @@ import Main.MatheroApp;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 
 public class AuthDisplay{
-    private  static CardLayout cardLayout = new CardLayout();
+    private  static final CardLayout cardLayout = new CardLayout();
     private static RoundedButton loginBtn;
     private static RoundedButton signInBtn;
 
     public static User user;
-
-    static User getUser() {
-        return user;
-    }
 
     public static void displayAuthentication(JPanel upperSection, JPanel lowerSection) {
         JPanel loginPanel = createLoginPanel(upperSection);
@@ -72,13 +66,10 @@ public class AuthDisplay{
         loginBtn.setFontSize(16);
         loginBtn.setPreferredSize(new Dimension(150, 40));
 
-        loginBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String username = usernameField.getText();
-                String password = new String(passwordField.getPassword());
-                handleLogin(username, password, upperSection);
-            }
+        loginBtn.addActionListener(e -> {
+            String username = usernameField.getText();
+            String password = new String(passwordField.getPassword());
+            handleLogin(username, password, upperSection);
         });
 
         GridBagConstraints gbc = new GridBagConstraints();
@@ -143,14 +134,11 @@ public class AuthDisplay{
         RoundedButton signBtn = new RoundedButton("Sign in", 5);
         signBtn.setPreferredSize(new Dimension(150, 40));
         signBtn.setFontSize(16);
-        signBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String username = usernameField.getText();
-                String email = emailField.getText();
-                String password = new String(passwordField.getPassword());
-                handleSignIn(username, email, password);
-            }
+        signBtn.addActionListener(e -> {
+            String username = usernameField.getText();
+            String email = emailField.getText();
+            String password = new String(passwordField.getPassword());
+            handleSignIn(username, email, password);
         });
 
         GridBagConstraints gbc = new GridBagConstraints();
@@ -186,7 +174,7 @@ public class AuthDisplay{
         return signInPanel;
     }
 
-    private static UserService userService = new UserService();
+    private static final UserService userService = new UserService();
 
     private static void handleLogin(String username, String password, JPanel upperSection) {
        user = userService.getUserByLogin(username, password);

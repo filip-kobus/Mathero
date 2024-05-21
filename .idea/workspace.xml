@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Gui/ExercisesStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gui/AuthDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/AuthDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/MatheroWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/RoundedButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/RoundedButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gui/TaskDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/TaskDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/MatheroApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/MatheroApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/AuthDisplay$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/AuthDisplay$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/AuthDisplay$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/AuthDisplay$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Gui/AuthDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/AuthDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MatheroWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MatheroWindow$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/MatheroWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/RoundedButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/RoundedButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/TaskDisplay$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/TaskDisplay$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/TaskDisplay$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Gui/TaskDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/TaskDisplay.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/MatheroApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/MatheroApp.class" afterDir="false" />
     </list>

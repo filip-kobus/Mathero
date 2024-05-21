@@ -1,16 +1,15 @@
 package Gui;
 
 import GeneratorZadan.Generator;
+import Main.MatheroApp;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class TaskDisplay {
-    private static JLabel[] exerciseField = {
+    private static final JLabel[] exerciseField = {
             new JLabel(""),
             new JLabel(""),
             new JLabel(""),
@@ -19,50 +18,39 @@ public class TaskDisplay {
 
     private static NumberInputField answerField;
     private static int propperAnswer;
-    private static ArrayList<String> exercise;
-    private static final ArrayList<ArrayList<String>> allExercise = new ArrayList<>();
+    private static final ExercisesStack stack = new ExercisesStack();
 
     public static void setTaskContent(JPanel taskPanel) {
-        answerField = new NumberInputField(2);  // Initialize answerField
+        answerField = new NumberInputField(2);
 
         RoundedButton previousExerciseBtn = new RoundedButton("<<", 30);
         RoundedButton checkAnswerBtn = new RoundedButton("Check", 30);
         checkAnswerBtn.styleCheckButton();
         RoundedButton nextExerciseBtn = new RoundedButton(">>", 30);
 
-        nextExerciseBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                newExercise();
-            }
-        });
+        JFrame frame = MatheroApp.getFrame();
+        frame.getRootPane().setDefaultButton(checkAnswerBtn);
 
-        checkAnswerBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String answerText = answerField.getText();
-                if (!answerText.isEmpty()) {
-                    int userAnswer = Integer.parseInt(answerText);
-                    if(userAnswer == propperAnswer) {
-                        JOptionPane.showMessageDialog(taskPanel, "Odpowiedź poprawna :)");
-                        newExercise();
-                    }
-                    else {
-                        JOptionPane.showMessageDialog(taskPanel, "Błędna odpowiedź :(");
-                        answerField.setText("");
-                    }
-                } else {
-                    JOptionPane.showMessageDialog(taskPanel, "Proszę wpisać liczbę!!!");
+        nextExerciseBtn.addActionListener(e -> newExercise());
+
+        checkAnswerBtn.addActionListener(e -> {
+            String answerText = answerField.getText();
+            if (!answerText.isEmpty()) {
+                int userAnswer = Integer.parseInt(answerText);
+                if(userAnswer == propperAnswer) {
+                    JOptionPane.showMessageDialog(taskPanel, "Odpowiedź poprawna :)");
+                    newExercise();
                 }
+                else {
+                    JOptionPane.showMessageDialog(taskPanel, "Błędna odpowiedź :(");
+                    answerField.setText("");
+                }
+            } else {
+                JOptionPane.showMessageDialog(taskPanel, "Proszę wpisać liczbę!!!");
             }
         });
 
-        previousExerciseBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                previousExercise();
-            }
-        });
+        previousExerciseBtn.addActionListener(e -> previousExercise());
 
 
         taskPanel.setLayout(new BorderLayout());
@@ -82,7 +70,8 @@ public class TaskDisplay {
         labelPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
 
         int dzialanie = Generator.generuj_dzialanie();
-        exercise = Generator.generuj_zadanie(dzialanie);
+        stack.push(Generator.generuj_zadanie(dzialanie));
+        ArrayList<String> exercise = stack.getExercise();
 
         for(int i = 0; i < 5; i++) {
             if(i < 2) {
@@ -118,10 +107,10 @@ public class TaskDisplay {
     }
 
     private static void newExercise() {
-        allExercise.add(exercise);
-        answerField.setText("");
         int dzialanie = Generator.generuj_dzialanie();
-        exercise = Generator.generuj_zadanie(dzialanie);
+        stack.push(Generator.generuj_zadanie(dzialanie));
+        ArrayList<String> exercise = stack.getExercise();
+        answerField.setText("");
 
         for(int i = 0; i < 5; i++) {
             if(i < 2) {
@@ -135,10 +124,7 @@ public class TaskDisplay {
     }
 
     private static void previousExercise() {
-        int lastElementIndex = allExercise.size() - 1;
-        if(lastElementIndex < 0) return;
-        exercise = allExercise.get(lastElementIndex);
-        allExercise.remove(lastElementIndex);
+        ArrayList<String> exercise = stack.getPrevious();;
         answerField.setText("");
 
         for(int i = 0; i < 5; i++) {

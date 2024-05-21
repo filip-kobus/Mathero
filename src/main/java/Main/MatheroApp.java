@@ -9,6 +9,7 @@ import java.awt.*;
 public class MatheroApp {
     private static final CardLayout cardLayout = new CardLayout();
     private static final JPanel mainPanel = new JPanel(cardLayout);
+    private static JFrame frame;
 
     public static void displayContent(JPanel lowerSection) {
         mainPanel.setLayout(cardLayout);
@@ -30,7 +31,7 @@ public class MatheroApp {
         contentPane.add(leftSidePanel, BorderLayout.WEST);
         contentPane.add(rightSidePanel, BorderLayout.EAST);
 
-        JFrame frame = new JFrame("MatHeroApp");
+        frame = new JFrame("MatHeroApp");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 740);
         ImageIcon icon = new ImageIcon("gallery/icon.png");
@@ -50,6 +51,7 @@ public class MatheroApp {
     public static JPanel getTaskPanel() {
         return (JPanel) mainPanel.getComponent(1);
     }
+    public static JFrame getFrame() { return frame;}
 
     public static void main(String[] args) {
         JPanel lowerSection = new JPanel(new FlowLayout());
