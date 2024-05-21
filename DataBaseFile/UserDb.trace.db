@@ -90,7 +90,7 @@ org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The
 	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
 	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
 	at Auth.User.UserService.<init>(UserService.java:12)
-	at AuthDisplay.<clinit>(AuthDisplay.java:176)
+	at Gui.AuthDisplay.<clinit>(Gui.AuthDisplay.java:176)
 	at MatHeroApp.<init>(MatHeroApp.java:18)
 	at MatHeroApp.main(MatHeroApp.java:70)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/stszy/IdeaProjects/Zesp1-Matematyka/DataBaseFile/UserDb.mv.db [2.2.224/7]" [50000-224]
@@ -149,7 +149,7 @@ org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The
 	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
 	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
 	at Auth.User.UserService.<init>(UserService.java:12)
-	at AuthDisplay.<clinit>(AuthDisplay.java:178)
+	at Gui.AuthDisplay.<clinit>(Gui.AuthDisplay.java:178)
 	at ControlPanel.displayContent(ControlPanel.java:26)
 	at ControlPanel.main(ControlPanel.java:65)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/stszy/IdeaProjects/Zesp1-Matematyka/DataBaseFile/UserDb.mv.db [2.2.224/7]" [50000-224]

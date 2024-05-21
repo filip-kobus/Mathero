@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="mala poprawkaa">
-      <change beforePath="$PROJECT_DIR$/src/main/java/MatheroApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatheroApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="init/confirmation1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,41 +34,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ControlPanel.executor": "Run",
-    "Application.Generator.executor": "Run",
-    "Application.Main (1).executor": "Run",
-    "Application.MatHeroApp.executor": "Run",
-    "Application.MathHeroApp.executor": "Run",
-    "Application.MatheroApp.executor": "Run",
-    "Application.MatheroWindow.executor": "Run",
-    "JUnit.GeneratorTest.executor": "Run",
-    "JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor": "Run",
-    "JUnit.PasswordValidatorTest2.executor": "Run",
-    "JUnit.UserRepositoryTest.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "auth-finish",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/stszy/.ssh/id_rsa.pub",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "settings.editor.splitter.proportion": "0.23583333",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Generator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.MatheroApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MatheroApp (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.MatheroApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MatheroWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumberInputField.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.testDodawanie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.testDzielenie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.testMnozenie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.testOdejmowanie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PasswordValidatorTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;tasksSolvingPage&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/stszy/.ssh/id_rsa.pub&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.23583333&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\PwProjects\PIO\MatHeroApp" />
     </key>
@@ -78,21 +83,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MatheroApp">
-    <configuration name="ControlPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ControlPanel" />
-      <module name="MatHeroApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="MatHeroApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main.MatheroApp">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Zesp1-Matematyka" />
@@ -100,15 +91,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MatHeroApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MatHeroApp" />
+    <configuration name="Main.MatheroApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.MatheroApp" />
       <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathHeroApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MathHeroApp" />
+    <configuration name="MatheroApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Gui.MatheroApp" />
       <module name="MatHeroApp" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,31 +118,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MatheroWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Gui.MatheroWindow" />
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorTest.testDzielenie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GeneratorZadan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GeneratorZadan" />
+      <option name="MAIN_CLASS_NAME" value="GeneratorZadan.GeneratorTest" />
+      <option name="METHOD_NAME" value="testDzielenie" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorTest.testMnozenie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatHeroApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GeneratorZadan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GeneratorZadan" />
+      <option name="MAIN_CLASS_NAME" value="GeneratorZadan.GeneratorTest" />
+      <option name="METHOD_NAME" value="testMnozenie" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.ControlPanel" />
-      <item itemvalue="Application.MatHeroApp" />
-      <item itemvalue="Application.MathHeroApp" />
+      <item itemvalue="Application.Main.MatheroApp" />
       <item itemvalue="Application.MatheroApp" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.MatheroWindow" />
+      <item itemvalue="JUnit.GeneratorTest.testMnozenie" />
+      <item itemvalue="JUnit.GeneratorTest.testDzielenie" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main.MatheroApp" />
+        <item itemvalue="Application.MatheroWindow" />
         <item itemvalue="Application.MatheroApp" />
-        <item itemvalue="Application.ControlPanel" />
-        <item itemvalue="Application.MatHeroApp" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.MathHeroApp" />
+        <item itemvalue="JUnit.GeneratorTest.testDzielenie" />
+        <item itemvalue="JUnit.GeneratorTest.testMnozenie" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
@@ -174,9 +208,6 @@
       <workItem from="1713377149481" duration="581000" />
       <workItem from="1714205043807" duration="162000" />
       <workItem from="1714205256787" duration="2027000" />
-      <workItem from="1716148439190" duration="362000" />
-      <workItem from="1716148813913" duration="11190000" />
-      <workItem from="1716212590027" duration="12019000" />
     </task>
     <task id="LOCAL-00001" summary="Repository Init">
       <option name="closed" value="true" />
@@ -186,15 +217,7 @@
       <option name="project" value="LOCAL" />
       <updated>1711664958295</updated>
     </task>
-    <task id="LOCAL-00002" summary="mala poprawkaa">
-      <option name="closed" value="true" />
-      <created>1716225923667</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1716225923667</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,8 +248,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Repository Init" />
-    <MESSAGE value="mala poprawkaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="mala poprawkaa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repository Init" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Auth/User/UserRepositoryTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

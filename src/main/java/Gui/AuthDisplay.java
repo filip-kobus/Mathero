@@ -1,23 +1,19 @@
+package Gui;
+
 import Auth.User.User;
 import Auth.User.UserService;
+import Main.MatheroApp;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 
-public class AuthDisplay {
-    private  static CardLayout cardLayout = new CardLayout();
-    private static JButton loginBtn;
-    private static JButton signInBtn;
+public class AuthDisplay{
+    private  static final CardLayout cardLayout = new CardLayout();
+    private static RoundedButton loginBtn;
+    private static RoundedButton signInBtn;
 
     public static User user;
-
-    static User getUser() {
-        return user;
-    }
-
 
     public static void displayAuthentication(JPanel upperSection, JPanel lowerSection) {
         JPanel loginPanel = createLoginPanel(upperSection);
@@ -29,9 +25,11 @@ public class AuthDisplay {
 
         cardLayout.show(upperSection, "login");
 
-        loginBtn = new JButton("Login Page");
-        signInBtn = new JButton("Sign In Page");
+        loginBtn = new RoundedButton("Login Page", 5);
+        signInBtn = new RoundedButton("Sign In Page", 5);
+        loginBtn.setFontSize(16);
         loginBtn.setPreferredSize(new Dimension(150, 40));
+        signInBtn.setFontSize(16);
         signInBtn.setPreferredSize(new Dimension(150, 40));
 
         signInBtn.addActionListener(e -> cardLayout.show(upperSection, "signIn"));
@@ -64,16 +62,14 @@ public class AuthDisplay {
         passwordLabel.setForeground(Color.WHITE);
         passwordLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        JButton loginBtn = new JButton("Login");
+        RoundedButton loginBtn = new RoundedButton("Login", 5);
+        loginBtn.setFontSize(16);
         loginBtn.setPreferredSize(new Dimension(150, 40));
 
-        loginBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String username = usernameField.getText();
-                String password = new String(passwordField.getPassword());
-                handleLogin(username, password, upperSection);
-            }
+        loginBtn.addActionListener(e -> {
+            String username = usernameField.getText();
+            String password = new String(passwordField.getPassword());
+            handleLogin(username, password, upperSection);
         });
 
         GridBagConstraints gbc = new GridBagConstraints();
@@ -135,17 +131,14 @@ public class AuthDisplay {
         passwordLabel.setForeground(Color.WHITE);
         passwordLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        JButton signBtn = new JButton("Sign in");
+        RoundedButton signBtn = new RoundedButton("Sign in", 5);
         signBtn.setPreferredSize(new Dimension(150, 40));
-
-        signBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String username = usernameField.getText();
-                String email = emailField.getText();
-                String password = new String(passwordField.getPassword());
-                handleSignIn(username, email, password);
-            }
+        signBtn.setFontSize(16);
+        signBtn.addActionListener(e -> {
+            String username = usernameField.getText();
+            String email = emailField.getText();
+            String password = new String(passwordField.getPassword());
+            handleSignIn(username, email, password);
         });
 
         GridBagConstraints gbc = new GridBagConstraints();
@@ -181,7 +174,7 @@ public class AuthDisplay {
         return signInPanel;
     }
 
-    private static UserService userService = new UserService();
+    private static final UserService userService = new UserService();
 
     private static void handleLogin(String username, String password, JPanel upperSection) {
        user = userService.getUserByLogin(username, password);
