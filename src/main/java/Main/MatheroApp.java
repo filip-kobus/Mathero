@@ -32,7 +32,7 @@ public class MatheroApp {
 
         JFrame frame = new JFrame("MatHeroApp");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1000, 600);
+        frame.setSize(1000, 740);
         ImageIcon icon = new ImageIcon("gallery/icon.png");
         frame.setIconImage(icon.getImage());
         frame.setContentPane(contentPane);

@@ -1,38 +1,69 @@
 package Gui;
 
+import GeneratorZadan.Generator;
+
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class TaskDisplay {
+    private static JLabel[] exerciseField = {
+            new JLabel(""),
+            new JLabel(""),
+            new JLabel(""),
+            new JLabel("")
+    };
+
+    private static NumberInputField answerField;
+    private static int propperAnswer;
+    private static ArrayList<String> exercise;
+    private static final ArrayList<ArrayList<String>> allExercise = new ArrayList<>();
 
     public static void setTaskContent(JPanel taskPanel) {
+        answerField = new NumberInputField(2);  // Initialize answerField
 
-        JLabel equationLabel = new JLabel("2 + ");
-        equationLabel.setForeground(Color.WHITE);
-        equationLabel.setFont(new Font("Segoe UI Black", Font.BOLD, 60));
+        RoundedButton previousExerciseBtn = new RoundedButton("<<", 30);
+        RoundedButton checkAnswerBtn = new RoundedButton("Check", 30);
+        checkAnswerBtn.styleCheckButton();
+        RoundedButton nextExerciseBtn = new RoundedButton(">>", 30);
 
-        JLabel resultLabel = new JLabel(" = 5");
-        resultLabel.setForeground(Color.WHITE);
-        resultLabel.setFont(new Font("Segoe UI Black", Font.BOLD, 60));
+        nextExerciseBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                newExercise();
+            }
+        });
 
-        JTextField answerField = new JTextField();
-        answerField.setPreferredSize(new Dimension(50, 60));
-        answerField.setBackground(new Color(52, 24, 73));
-        answerField.setForeground(Color.WHITE);
-        answerField.setFont(new Font("Arial", Font.PLAIN, 60));
-        answerField.setCaretPosition(0);
+        checkAnswerBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String answerText = answerField.getText();
+                if (!answerText.isEmpty()) {
+                    int userAnswer = Integer.parseInt(answerText);
+                    if(userAnswer == propperAnswer) {
+                        JOptionPane.showMessageDialog(taskPanel, "Odpowiedź poprawna :)");
+                        newExercise();
+                    }
+                    else {
+                        JOptionPane.showMessageDialog(taskPanel, "Błędna odpowiedź :(");
+                        answerField.setText("");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(taskPanel, "Proszę wpisać liczbę!!!");
+                }
+            }
+        });
 
-        JButton previousExerciseBtn = new JButton("<<");
-        previousExerciseBtn.setFont(new Font("Arial", Font.PLAIN, 24));
-        previousExerciseBtn.setPreferredSize(new Dimension(190, 150));
+        previousExerciseBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                previousExercise();
+            }
+        });
 
-        JButton checkAnswerBtn = new JButton("Check");
-        checkAnswerBtn.setFont(new Font("Arial", Font.PLAIN, 24));
-        checkAnswerBtn.setPreferredSize(new Dimension(190, 150));
-
-        JButton nextExerciseBtn = new JButton(">>");
-        nextExerciseBtn.setFont(new Font("Arial", Font.PLAIN, 24));
-        nextExerciseBtn.setPreferredSize(new Dimension(190, 150));
 
         taskPanel.setLayout(new BorderLayout());
         taskPanel.setBackground(new Color(52, 24, 73));
@@ -49,12 +80,33 @@ public class TaskDisplay {
         JPanel labelPanel = new JPanel();
         labelPanel.setOpaque(false);
         labelPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
-        labelPanel.add(equationLabel);
-        labelPanel.add(answerField);
-        labelPanel.add(resultLabel);
+
+        int dzialanie = Generator.generuj_dzialanie();
+        exercise = Generator.generuj_zadanie(dzialanie);
+
+        for(int i = 0; i < 5; i++) {
+            if(i < 2) {
+                exerciseField[i].setText(exercise.get(i));
+                exerciseField[i].setForeground(Color.WHITE);
+                exerciseField[i].setFont(new Font("Segoe UI Black", Font.BOLD, 60));
+                labelPanel.add(exerciseField[i]);
+            }
+            else if(i == 2) {
+                propperAnswer = Integer.parseInt(exercise.get(i));
+                labelPanel.add(answerField);
+            }
+            else {
+                exerciseField[i-1].setText(exercise.get(i));
+                exerciseField[i-1].setForeground(Color.WHITE);
+                exerciseField[i-1].setFont(new Font("Segoe UI Black", Font.BOLD, 60));
+                labelPanel.add(exerciseField[i-1]);
+            }
+        }
+
         taskPanel.add(labelPanel, BorderLayout.CENTER);
 
-        JPanel buttonPanel = new JPanel(new GridLayout(1, 3, 10, 0));
+        JPanel buttonPanel = new JPanel(new FlowLayout());
+        buttonPanel.setBorder(new EmptyBorder(0, 0, 20, 0));
         buttonPanel.setOpaque(false);
         buttonPanel.add(previousExerciseBtn);
         buttonPanel.add(checkAnswerBtn);
@@ -63,5 +115,40 @@ public class TaskDisplay {
 
         taskPanel.revalidate();
         taskPanel.repaint();
+    }
+
+    private static void newExercise() {
+        allExercise.add(exercise);
+        answerField.setText("");
+        int dzialanie = Generator.generuj_dzialanie();
+        exercise = Generator.generuj_zadanie(dzialanie);
+
+        for(int i = 0; i < 5; i++) {
+            if(i < 2) {
+                exerciseField[i].setText(exercise.get(i));
+            }
+            else if(i > 2) {
+                exerciseField[i-1].setText(exercise.get(i));
+            }
+        }
+        propperAnswer =  Integer.parseInt(exercise.get(2));
+    }
+
+    private static void previousExercise() {
+        int lastElementIndex = allExercise.size() - 1;
+        if(lastElementIndex < 0) return;
+        exercise = allExercise.get(lastElementIndex);
+        allExercise.remove(lastElementIndex);
+        answerField.setText("");
+
+        for(int i = 0; i < 5; i++) {
+            if(i < 2) {
+                exerciseField[i].setText(exercise.get(i));
+            }
+            else if(i > 2) {
+                exerciseField[i-1].setText(exercise.get(i));
+            }
+        }
+        propperAnswer =  Integer.parseInt(exercise.get(2));
     }
 }

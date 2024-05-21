@@ -20,7 +20,7 @@ public class RoundedButton extends JButton {
         setOpaque(false);
         setBackground(new Color(186, 186, 186)); // Change font color to red
         setForeground(new Color(57, 62, 69));
-        setPreferredSize(new Dimension(190, 150));
+        setPreferredSize(new Dimension(180, 120));
         setFont(new Font("Arial", Font.PLAIN, 48)); // Using bold font with size 36
 
         // Add mouse listeners to change state on hover and press
@@ -85,7 +85,7 @@ public class RoundedButton extends JButton {
         Graphics2D g2 = (Graphics2D) g.create();
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2.setColor(Color.BLACK);
-        g2.setStroke(new BasicStroke(0));
+        g2.setStroke(new BasicStroke(2));
         g2.drawRoundRect(0, 0, getWidth() - 1, getHeight() - 1, cornerRadius, cornerRadius);
         g2.dispose();
     }

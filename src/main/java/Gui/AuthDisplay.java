@@ -141,7 +141,8 @@ public class AuthDisplay{
         passwordLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
         RoundedButton signBtn = new RoundedButton("Sign in", 5);
-
+        signBtn.setPreferredSize(new Dimension(150, 40));
+        signBtn.setFontSize(16);
         signBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
