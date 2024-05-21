@@ -20,7 +20,7 @@ public class ExercisesStack {
     }
 
     public void push(ArrayList<String> element) {
-        allExercise.add(element);
+        if(currIndeks == allExercise.size() - 1) allExercise.add(element);
         currIndeks++;
     }
 
