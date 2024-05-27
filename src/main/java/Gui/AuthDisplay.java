@@ -3,6 +3,7 @@ package Gui;
 import Auth.User.User;
 import Auth.User.UserService;
 import Main.MatheroApp;
+import PassVal.PasswordValidator;
 
 import javax.swing.*;
 import java.awt.*;
@@ -193,10 +194,16 @@ public class AuthDisplay{
 
     private static void handleSignIn(String username, String email, String password) {
         User user = new User(username, email, password);
-        if (userService.saveUser(user)) {
-            JOptionPane.showMessageDialog(null, "Sign-in successful! Username: " + username + ", Email: " + email);
-        } else {
-            JOptionPane.showMessageDialog(null, "Something went wrong :( Sign-in failed! Username or Email already exists.");
+        PasswordValidator validator = new PasswordValidator();
+        if(validator.isValidB(password)) {
+            if (userService.saveUser(user)) {
+                JOptionPane.showMessageDialog(null, "Sign-in successful! Username: " + username + ", Email: " + email);
+            } else {
+                JOptionPane.showMessageDialog(null, "Something went wrong :( Sign-in failed! Username or Email already exists.");
+            }
+        }
+        else{
+            JOptionPane.showMessageDialog(null, validator.isValidS(password));
         }
     }
 }

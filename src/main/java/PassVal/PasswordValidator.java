@@ -13,7 +13,7 @@ public class PasswordValidator {
     public PasswordValidator(){
         minCapital = 1;
         minNumber = 2;
-        minSpecial = 2;
+        minSpecial = 1;
         minLength = 8;
     }
     /*
@@ -36,7 +36,7 @@ public class PasswordValidator {
         String output = "";
 
         if(password.length() < minLength){
-            output += "Hasło zbyt krótkie - conajmniej " + minLength + " znaków\n";
+            output += "Password too short - at least " + minLength + " characters\n";
         }
 
         for(char c : password.toCharArray()){
@@ -47,19 +47,19 @@ public class PasswordValidator {
             else if(Character.isLowerCase(c))
                 ;
             else if(Character.isSpaceChar(c))
-                output += "Hasło nie może zawierać spacji\n";
+                output += "Password cannot contain spaces\n";
             else
                 specialC++;
         }
 
         if(numberC<minNumber)
-            output += "Hasło musi zawierać conajmniej " + minNumber +" cyfry\n";
+            output += "Password should contain at least " + minNumber +" numbers\n";
 
         if(specialC<minSpecial)
-            output += "Hasło musi zawierać conajmniej " + minSpecial +" znaki specjalne\n";
+            output += "Password should contain at least " + minSpecial +" special characters\n";
 
         if(capitalC<minCapital)
-            output += "Hasło musi zawierać conajmniej " + minCapital +" wielkie litery\n";
+            output += "Password should contain at least " + minCapital +" capital characters\n";
 
         if(output.length() == 0)
             output += "Password valid";
