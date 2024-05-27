@@ -19,6 +19,7 @@ public class TaskDisplay {
     private static NumberInputField answerField;
     private static int propperAnswer;
     private static final ExercisesStack stack = new ExercisesStack();
+    private static int streak = 0;
 
     public static void setTaskContent(JPanel taskPanel) {
         answerField = new NumberInputField(2);
@@ -30,8 +31,9 @@ public class TaskDisplay {
 
         JFrame frame = MatheroApp.getFrame();
         frame.getRootPane().setDefaultButton(checkAnswerBtn);
-
         nextExerciseBtn.addActionListener(e -> newExercise());
+
+        JLabel streakLabel = new JLabel("Streak: " + Integer.toString(streak));
 
         checkAnswerBtn.addActionListener(e -> {
             String answerText = answerField.getText();
@@ -40,10 +42,14 @@ public class TaskDisplay {
                 if(userAnswer == propperAnswer) {
                     JOptionPane.showMessageDialog(taskPanel, "Odpowiedź poprawna :)");
                     newExercise();
+                    streak++;
+                    streakLabel.setText("Streak: " + Integer.toString(streak));
                 }
                 else {
                     JOptionPane.showMessageDialog(taskPanel, "Błędna odpowiedź :(");
                     answerField.setText("");
+                    streak = 0;
+                    streakLabel.setText("Streak: " + Integer.toString(streak));
                 }
             } else {
                 JOptionPane.showMessageDialog(taskPanel, "Proszę wpisać liczbę!!!");
@@ -93,6 +99,10 @@ public class TaskDisplay {
         }
 
         taskPanel.add(labelPanel, BorderLayout.CENTER);
+
+        JPanel streakPanel = new JPanel(new FlowLayout());
+        streakPanel.add(streakLabel);
+        taskPanel.add(streakPanel, BorderLayout.NORTH);
 
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.setBorder(new EmptyBorder(0, 0, 20, 0));
