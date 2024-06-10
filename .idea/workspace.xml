@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/ExerciseCreator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gui/TaskDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/TaskDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/META-INF/persistence.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,7 @@
     "Application.MatheroApp.executor": "Run",
     "Application.MatheroWindow.executor": "Run",
     "Application.NumberInputField.executor": "Run",
+    "JAR Application.MatHeroApp-1.0-SNAPSHOT-jar-with-dependencies.jar.executor": "Run",
     "JUnit.GeneratorTest.executor": "Run",
     "JUnit.GeneratorTest.testDodawanie.executor": "Run",
     "JUnit.GeneratorTest.testDzielenie.executor": "Run",
@@ -56,11 +58,13 @@
     "JUnit.PasswordValidatorTest2.executor": "Run",
     "JUnit.UserRepositoryTest.executor": "Run",
     "JUnit.UserTest.executor": "Run",
+    "Maven.MatHeroApp [clean].executor": "Run",
+    "Maven.MatHeroApp [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "ReadMeEdit",
+    "git-widget-placeholder": "Release",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/stszy/.ssh/id_rsa.pub",
     "node.js.detected.package.eslint": "true",
@@ -87,7 +91,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main.MatheroApp">
+  <component name="RunManager" selected="JAR Application.MatHeroApp-1.0-SNAPSHOT-jar-with-dependencies.jar">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Zesp1-Matematyka" />
@@ -151,37 +155,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GeneratorTest.testMnozenie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MatHeroApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GeneratorZadan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GeneratorZadan" />
-      <option name="MAIN_CLASS_NAME" value="GeneratorZadan.GeneratorTest" />
-      <option name="METHOD_NAME" value="testMnozenie" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="MatHeroApp-1.0-SNAPSHOT-jar-with-dependencies.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/MatHeroApp-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main.MatheroApp" />
       <item itemvalue="Application.MatheroApp" />
       <item itemvalue="Application.MatheroWindow" />
-      <item itemvalue="JUnit.GeneratorTest.testMnozenie" />
+      <item itemvalue="JAR Application.MatHeroApp-1.0-SNAPSHOT-jar-with-dependencies.jar" />
       <item itemvalue="JUnit.GeneratorTest.testDzielenie" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.MatHeroApp-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         <item itemvalue="Application.Main.MatheroApp" />
         <item itemvalue="Application.MatheroWindow" />
         <item itemvalue="Application.MatheroApp" />
         <item itemvalue="JUnit.GeneratorTest.testDzielenie" />
-        <item itemvalue="JUnit.GeneratorTest.testMnozenie" />
       </list>
     </recent_temporary>
   </component>

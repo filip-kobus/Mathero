@@ -1,0 +1,108 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"28e788b1-bf79-4578-8edd-b62fda488199\" name=\"Changes\" comment=\"mala poprawkaa\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/MatheroApp.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/MatheroApp.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2eKt45x7kFu5riYIQPTvNtqSP7N\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.ControlPanel.executor\": \"Run\",\r\n    \"Application.Generator.executor\": \"Run\",\r\n    \"Application.Main (1).executor\": \"Run\",\r\n    \"Application.MatHeroApp.executor\": \"Run\",\r\n    \"Application.MathHeroApp.executor\": \"Run\",\r\n    \"Application.MatheroApp.executor\": \"Run\",\r\n    \"Application.MatheroWindow.executor\": \"Run\",\r\n    \"JUnit.GeneratorTest.executor\": \"Run\",\r\n    \"JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor\": \"Run\",\r\n    \"JUnit.PasswordValidatorTest2.executor\": \"Run\",\r\n    \"JUnit.UserRepositoryTest.executor\": \"Run\",\r\n    \"JUnit.UserTest.executor\": \"Run\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary\": \"JUnit5\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5\": \"\",\r\n    \"git-widget-placeholder\": \"auth-finish\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/stszy/.ssh/id_rsa.pub\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\r\n    \"settings.editor.splitter.proportion\": \"0.23583333\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"E:\\PwProjects\\PIO\\MatHeroApp\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.MatheroApp\">\r\n    <configuration name=\"ControlPanel\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ControlPanel\" />\r\n      <module name=\"MatHeroApp\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Main (1)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\r\n      <module name=\"MatHeroApp\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\r\n      <module name=\"Zesp1-Matematyka\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MatHeroApp\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"MatHeroApp\" />\r\n      <module name=\"MatHeroApp\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MathHeroApp\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"MathHeroApp\" />\r\n      <module name=\"MatHeroApp\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"MatheroApp\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"MatheroApp\" />\r\n      <module name=\"MatHeroApp\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Application.Main\" />\r\n      <item itemvalue=\"Application.ControlPanel\" />\r\n      <item itemvalue=\"Application.MatHeroApp\" />\r\n      <item itemvalue=\"Application.MathHeroApp\" />\r\n      <item itemvalue=\"Application.MatheroApp\" />\r\n      <item itemvalue=\"Application.Main (1)\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.MatheroApp\" />\r\n        <item itemvalue=\"Application.ControlPanel\" />\r\n        <item itemvalue=\"Application.MatHeroApp\" />\r\n        <item itemvalue=\"Application.Main (1)\" />\r\n        <item itemvalue=\"Application.MathHeroApp\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150\" />\r\n        <option value=\"bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SshConsoleOptionsProvider\">\r\n    <option name=\"myEncoding\" value=\"UTF-8\" />\r\n    <option name=\"myConnectionType\" value=\"SSH_CONFIG\" />\r\n    <option name=\"myConnectionId\" value=\"Szymon Stasiak@ssh.dev.azure.com:22 key\" />\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration>C:\\Users\\stszy\\AppData\\Roaming\\Subversion</configuration>\r\n    <option name=\"sshConnectionType\" value=\"PRIVATE_KEY\" />\r\n    <option name=\"sshExecutablePath\" value=\"ssh\" />\r\n    <option name=\"sshUserName\" value=\"Szymon Stasiak\" />\r\n    <option name=\"sshPrivateKeyPath\" value=\"C:\\Users\\stszy\\.ssh\\id_rsa\" />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"28e788b1-bf79-4578-8edd-b62fda488199\" name=\"Changes\" comment=\"\" />\r\n      <created>1711664903389</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1711664903389</updated>\r\n      <workItem from=\"1711664904825\" duration=\"5892000\" />\r\n      <workItem from=\"1711671123303\" duration=\"1011000\" />\r\n      <workItem from=\"1711700923855\" duration=\"1223000\" />\r\n      <workItem from=\"1711733257356\" duration=\"845000\" />\r\n      <workItem from=\"1713377149481\" duration=\"581000\" />\r\n      <workItem from=\"1714205043807\" duration=\"162000\" />\r\n      <workItem from=\"1714205256787\" duration=\"2027000\" />\r\n      <workItem from=\"1716148439190\" duration=\"362000\" />\r\n      <workItem from=\"1716148813913\" duration=\"11190000\" />\r\n      <workItem from=\"1716212590027\" duration=\"12019000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Repository Init\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1711664958295</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1711664958295</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"mala poprawkaa\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1716225923667</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716225923667</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Repository Init\" />\r\n    <MESSAGE value=\"mala poprawkaa\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"mala poprawkaa\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,7 +5,12 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="mala poprawkaa">
+-      <change beforePath="$PROJECT_DIR$/src/main/java/MatheroApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatheroApp.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/AuthDisplay$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AuthDisplay$1.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/AuthDisplay$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AuthDisplay$2.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/AuthDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AuthDisplay.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/TaskDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TaskDisplay.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -36,40 +41,40 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.ControlPanel.executor": "Run",
+-    "Application.Generator.executor": "Run",
+-    "Application.Main (1).executor": "Run",
+-    "Application.MatHeroApp.executor": "Run",
+-    "Application.MathHeroApp.executor": "Run",
+-    "Application.MatheroApp.executor": "Run",
+-    "Application.MatheroWindow.executor": "Run",
+-    "JUnit.GeneratorTest.executor": "Run",
+-    "JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor": "Run",
+-    "JUnit.PasswordValidatorTest2.executor": "Run",
+-    "JUnit.UserRepositoryTest.executor": "Run",
+-    "JUnit.UserTest.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+-    "git-widget-placeholder": "auth-finish",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/stszy/.ssh/id_rsa.pub",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "project.structure.last.edited": "Project",
+-    "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0",
+-    "settings.editor.selected.configurable": "preferences.pluginManager",
+-    "settings.editor.splitter.proportion": "0.23583333",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.ControlPanel.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Generator.executor&quot;: &quot;Run&quot;,
++    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
++    &quot;Application.MatHeroApp.executor&quot;: &quot;Run&quot;,
++    &quot;Application.MathHeroApp.executor&quot;: &quot;Run&quot;,
++    &quot;Application.MatheroApp.executor&quot;: &quot;Run&quot;,
++    &quot;Application.MatheroWindow.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.GeneratorTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.PasswordValidatorTest2.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.UserRepositoryTest.executor&quot;: &quot;Run&quot;,
++    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
++    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;auth-finish&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/stszy/.ssh/id_rsa.pub&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
++    &quot;settings.editor.splitter.proportion&quot;: &quot;0.23583333&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="E:\PwProjects\PIO\MatHeroApp" />
+@@ -176,7 +181,8 @@
+       <workItem from="1714205256787" duration="2027000" />
+       <workItem from="1716148439190" duration="362000" />
+       <workItem from="1716148813913" duration="11190000" />
+-      <workItem from="1716212590027" duration="12019000" />
++      <workItem from="1716212590027" duration="13583000" />
++      <workItem from="1716237333060" duration="650000" />
+     </task>
+     <task id="LOCAL-00001" summary="Repository Init">
+       <option name="closed" value="true" />
