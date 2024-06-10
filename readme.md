@@ -19,7 +19,7 @@ Mathero to projekt w Java Swing, który umożliwia użytkownikom logowanie się 
 
 ## Użycie
 
-1. Uruchom `MatheroApp.java`.
+1. Uruchom plik jar.
 2. Zaloguj się za pomocą swojego konta.
 3. Wygeneruj równanie matematyczne i rozpocznij rozwiązywanie.
 
