@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e788b1-bf79-4578-8edd-b62fda488199" name="Changes" comment="Implementuję klasę wyświetlającą okienko aplikacji z podstawowym layoutem">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBaseFile/UserDb.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Gui/AuthDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gui/AuthDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PassVal/PasswordValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PassVal/PasswordValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gui/AuthDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gui/AuthDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PassVal/PasswordValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PassVal/PasswordValidator.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,44 +37,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Generator.executor": "Run",
-    "Application.Main (1).executor": "Run",
-    "Application.Main.MatheroApp.executor": "Run",
-    "Application.MatheroApp (1).executor": "Run",
-    "Application.MatheroApp.executor": "Run",
-    "Application.MatheroWindow.executor": "Run",
-    "Application.NumberInputField.executor": "Run",
-    "JUnit.GeneratorTest.executor": "Run",
-    "JUnit.GeneratorTest.testDodawanie.executor": "Run",
-    "JUnit.GeneratorTest.testDzielenie.executor": "Run",
-    "JUnit.GeneratorTest.testMnozenie.executor": "Run",
-    "JUnit.GeneratorTest.testOdejmowanie.executor": "Run",
-    "JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor": "Run",
-    "JUnit.PasswordValidatorTest2.executor": "Run",
-    "JUnit.UserRepositoryTest.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "passValImplementation",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/stszy/.ssh/id_rsa.pub",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "ssh.settings",
-    "settings.editor.splitter.proportion": "0.23583333",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Generator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.MatheroApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MatheroApp (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.MatheroApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MatheroWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumberInputField.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.testDodawanie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.testDzielenie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.testMnozenie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.testOdejmowanie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PasswordEncrypterTest.testPasswordEncryptionAndVerification.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PasswordValidatorTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;readmeMake&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/stszy/.ssh/id_rsa.pub&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.23583333&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
